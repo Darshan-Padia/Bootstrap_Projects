@@ -54,7 +54,7 @@
         background-color: rgba(247, 243, 243, 1);
     }
 
-    @media only screen and (max-width: 800px) {
+    @media only screen and (max-width: 1115px) {
 
        #ready_child_p{
             text-align: center; font-size: large;font-weight: 600; letter-spacing: 3px;
@@ -99,53 +99,63 @@
 
 <body>
 
-    <div style="display: flex; justify-content: center;">
+    <div style="display: flex; justify-content: center; ">
 
-        <nav class="navbar navbar-expand-lg navbar-light  " style="display: flex; justify-content: center;width: 80%; ">
-            <div style=" width: 100%;display: flex;justify-content: space-between;">
-                <a class="navbar-brand" href="#">Darshan</a>
-                <div class="d">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                </div>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="display: flex;justify-content: end; width:100%">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Work</a>
-                        </li>
-                        <form class="d-flex">
-                            <button class="btn btn" type="submit"><i class="fa fa-github"
-                                    style="font-size:26px; color: black;"></i>
-                            </button>
-                        </form>
-                        <form class="d-flex">
-                            <button class="btn btn" type="submit"><i class="fa fa-sun-o"
-                                    style="font-size:26px; color: rgb(193, 121, 12);"></i>
-                            </button>
-                        </form>
+        <nav class="navbar navbar-expand-lg navbar-light  " style="display: flex; justify-content: space-between;width: 80%; ">
+            <div style="height: 100%;">
+                <a style="display: flex ; align-items: start;" class="navbar-brand" href="#"><p>Darshan</p></a>
+            </div>
+            <div style=" display: flex;justify-content: space-between; flex-direction: column;">
+                <!-- <div style = "display: flex;justify-content: space-between; flex-direction: row;"> -->
+                    <div  class="d" style=" width: 100%; display: flex;justify-content: center;flex-direction: column;">
 
-                        <!-- Default dropend button -->
-                        <div class="btn-group dropend">
-                            <button type="button" class="btn btn-primary dropdown-toggle" style="border-radius: 10px;"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Dropright
-                            </button>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
+                        
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="display: flex;justify-content: end; width:100%">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Work</a>
+                                </li>
+                                <form class="d-flex">
+                                    <button class="btn btn" type="submit"><i class="fa fa-github"
+                                            style="font-size:26px; color: black;"></i>
+                                    </button>
+                                </form>
+                                <form class="d-flex">
+                                    <button class="btn btn" type="submit"><i class="fa fa-sun-o"
+                                            style="font-size:26px; color: rgb(193, 121, 12);"></i>
+                                    </button>
+                                </form>
+        
+                                <!-- Default dropend button -->
+                                <div class="btn-group dropend">
+                                    <button type="button" class="btn btn-primary dropdown-toggle" style="border-radius: 10px;"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Dropright
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </div>
                         </div>
+
+                    <!-- </div> -->
+
                 </div>
+                
                 </ul>
             </div>
 
