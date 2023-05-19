@@ -1,0 +1,564 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Hello, world!</title>
+</head>
+
+<style>
+    .ready_to_start_child{
+        width: 80%; padding-top: 30px; padding-bottom: 30px ; padding-left: 100px; padding-right: 100px; background-color: rgba(227, 232, 237, 1); border-radius: 13px;
+    }
+    .ready_to_start{
+        display: flex; justify-content: center; margin-top: 100px;margin-bottom: 100px;
+    }
+   #ready_child_p{
+        
+        text-align: center; font-size: xxx-large;font-weight: 600; letter-spacing: 3px;
+    }
+    .cards_mobile{
+        display: flex; justify-content: space-between;
+        }
+    .experience{
+        display: flex; justify-content: center;
+    }
+
+    .exp_main{
+        width: 80%; padding-top: 50px; display: flex;justify-content: center;
+    }
+
+    .icons_svg{
+        width: 90%;
+    }
+
+    .right_to_icon_svg{
+        padding-top: 130px;
+    }
+
+    .inside_skills {
+        padding-top: 30px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    body {
+        background-color: rgba(247, 243, 243, 1);
+    }
+
+    @media only screen and (max-width: 800px) {
+
+       #ready_child_p{
+            text-align: center; font-size: large;font-weight: 600; letter-spacing: 3px;
+
+        }
+
+        .cards_mobile{
+            display: grid;
+            grid-template-columns: auto auto;
+            row-gap: 4px;
+        }
+
+        .exp_main{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .right_to_icon_svg{
+            padding-top: 30px;
+        }
+
+        .inside_skills {
+            /* background-color: red; */
+            display: grid;
+            padding: 20px;
+            grid-template-columns: auto auto auto;
+            row-gap: 15px;
+            
+            
+            
+            
+        }
+        
+        .last_two {
+            /* justify-content: center !important; */
+            margin-left: 250px;
+            align-self: center !important;
+        }
+
+    }
+</style>
+
+<body>
+
+    <div style="display: flex; justify-content: center;">
+
+        <nav class="navbar navbar-expand-lg navbar-light  " style="display: flex; justify-content: center;width: 80%; ">
+            <div style=" width: 100%;display: flex;justify-content: space-between;">
+                <a class="navbar-brand" href="#">Darshan</a>
+                <div class="d">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="display: flex;justify-content: end; width:100%">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Work</a>
+                        </li>
+                        <form class="d-flex">
+                            <button class="btn btn" type="submit"><i class="fa fa-github"
+                                    style="font-size:26px; color: black;"></i>
+                            </button>
+                        </form>
+                        <form class="d-flex">
+                            <button class="btn btn" type="submit"><i class="fa fa-sun-o"
+                                    style="font-size:26px; color: rgb(193, 121, 12);"></i>
+                            </button>
+                        </form>
+
+                        <!-- Default dropend button -->
+                        <div class="btn-group dropend">
+                            <button type="button" class="btn btn-primary dropdown-toggle" style="border-radius: 10px;"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Dropright
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+                </div>
+                </ul>
+            </div>
+
+    </div>
+    </nav>
+    </div>
+
+    <div style="display: flex; justify-content: center; ">
+        <div  style="width: 800px; margin-right: 10%; margin-left: 10%;" class="intro">
+
+            <p
+                style=" padding-top: 40px; padding-bottom: 20px; text-align: center; font-size: xxx-large; font-weight: bold;">
+                Hello I’m <br>
+                Joe Martinez
+            </p>
+            <p style="
+                font-style: normal;
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 31px;
+                /* or 129% */
+                
+                text-align: justify;
+                
+                color: #898989;">
+                I am a UI Engineer at Google, where I design and develop user-centered interfaces for cutting-edge
+                technology products. I work with a talented team to create visually appealing and intuitive designs that
+                enhance user experience. I am passionate about using technology to create beautiful and functional
+                designs that solve real-world problems.
+            </p>
+
+        </div>
+
+
+    </div>
+
+
+    <div style="display: flex; justify-content: center; flex-wrap: wrap;">
+        <div class="skills">
+
+            <div class="inside_skills">
+
+                <div style="padding: 10px; margin-left: 20px; background-color: gainsboro; border-radius: 10px;">
+                    <img src="Vector.svg" alt="html_image"> HTML
+                </div>
+
+                <div style="padding: 10px; margin-left: 20px; background-color: gainsboro; border-radius: 10px;">
+                    <img src="Vector.svg" alt="html_image"> HTML
+                </div>
+
+                <div style="padding: 10px; margin-left: 20px; background-color: gainsboro; border-radius: 10px;">
+                    <img src="Vector.svg" alt="html_image"> HTML
+                </div>
+
+                <div style="padding: 10px; margin-left: 20px; background-color: gainsboro; border-radius: 10px;">
+                    <img src="Vector.svg" alt="html_image"> HTML
+                </div>
+
+                <div style="padding: 10px; margin-left: 20px; background-color: gainsboro; border-radius: 10px;">
+                    <img src="Vector.svg" alt="html_image"> HTML
+                </div>
+
+                <div style="padding: 10px; margin-left: 20px; background-color: gainsboro; border-radius: 10px;">
+                    <img src="Vector.svg" alt="html_image"> HTML
+                </div>
+
+                <div class="last_two"
+                    style="padding: 10px; margin-left: 20px; background-color: gainsboro; border-radius: 10px;">
+                    <img src="Vector.svg" alt="html_image"> HTML
+                </div>
+
+                <div class="last_two"
+                    style="padding: 10px; margin-left: 20px; background-color: gainsboro; border-radius: 10px;">
+                    <img src="Vector.svg" alt="html_image"> HTML
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="experience" >
+        <div class="exp_main" >
+            <div class="icons_svg" >
+                <p
+                    style='padding-top : 50px; padding-bottom: 30px; font-size: xxx-large;text-align: left; font-weight: bolder;'>
+                    My experience
+                </p>
+                <div  style="display: flex;flex-direction: column; width :150px ">
+                    <div style="display: flex;">
+                        <div>
+                            <img src="google.svg" alt="google_image">
+                        </div>
+                        <div style="display: flex; flex-direction: column; padding-left: 30px;">
+                            <p>
+                                Google
+                            </p>
+                            <p style="font-size:small ; color: rgba(23, 33, 53, 0.4); padding-top: -30px;">
+                                UI Engineer
+                            </p>
+                        </div>
+                    </div>
+
+                    <div style="display: flex;">
+                        <div>
+                            <img src="oculus.svg" alt="google_image">
+                        </div>
+                        <div style="display: flex; flex-direction: column; padding-left: 30px;">
+                            <p>
+                                Oculus
+                            </p>
+                            <p style="font-size:small ; color: rgba(23, 33, 53, 0.4);">
+                                FrontEnd Developer
+                            </p>
+                        </div>
+                    </div>
+
+                    <div style="display: flex;">
+                        <div>
+                            <img src="hashnode.svg" alt="google_image">
+                        </div>
+                        <div style="display: flex; flex-direction: column; padding-left: 30px;">
+                            <p>
+                                Hashnode
+                            </p>
+                            <p style="font-size:small ; color: rgba(23, 33, 53, 0.4);">
+                                FrontEnd Developer
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="right_to_icon_svg" >
+                <div style="padding: 30px;">
+                    <p>
+                        UI Engineer at <wer style="color: blue;">@Goolge</wer>
+                    </p>
+                    <p style="font-size:small ; color: rgba(23, 33, 53, 0.4);">
+                        2022-Present
+                    </p>
+                </div>
+
+                <div style="padding-bottom: 30px;">
+                    Design and implementation of visually appealing and intuitive user interfaces for innovative
+                    technology products.
+                </div>
+
+                <div style="padding-bottom: 30px;">
+                    Continuous improvement of the user experience and maintenance of quality standards.
+
+                </div>
+
+                <div style="padding-bottom: 30px;">
+                    Conducting testing and validation, user research, and collaborating with other teams to ensure
+                    quality and effective integration with the final product.
+                </div>
+
+
+
+            </div>
+
+
+        </div>
+    </div>
+
+    <!-- z -->
+
+    <div style="display: flex; justify-content: center;">
+        <div style="width: 80%;">
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+                <div class="col">
+                    <p style="letter-spacing: 3px; font-weight: bolder; font-size: xxx-large;">Gitlab Portfolio</p>
+                    <div class="card" style="border-radius: 14px;">
+                        <img src="img.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <div style="display: flex; justify-content: space-between;">
+                                <div class ='cards_mobile  '">
+                                    <div>
+                                        <p
+                                            style="background-color: rgba(227, 232, 237, 1); border-radius: 10px; margin: 7px; padding:8px">
+                                            HTML</p>
+                                    </div>
+                                    <div>
+                                        <p
+                                            style="background-color: rgba(227, 232, 237, 1); border-radius: 10px; margin: 7px; padding:8px">
+                                            Tailwind</p>
+                                    </div>
+                                    <div>
+                                        <p
+                                            style="background-color: rgba(227, 232, 237, 1); border-radius: 10px; margin: 7px; padding:8px">
+                                            Typescript</p>
+                                    </div>
+                                    <div>
+                                        <p
+                                            style="background-color: rgba(227, 232, 237, 1); border-radius: 10px; margin: 7px; padding:8px">
+                                            Next.js</p>
+                                    </div>
+                                </div>
+
+                                <div style="display: flex; margin-top: 10px;">
+                                    <div style="padding-right: 15px;">
+                                        <i class="fa fa-github" style="font-size:26px; color: black;"></i>
+                                    </div>
+
+                                    <div>
+                                        <img src="share.svg" alt="">
+                                    </div>
+                                </div>
+
+                            </div>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
+                                to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <p style="letter-spacing: 3px; font-weight: bolder; font-size: xxx-large;">NFT Marketplace</p>
+                    <div class="card" style="border-radius: 14px;">
+                        <img src="img-1.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <div style="display: flex; justify-content: space-between;">
+                                <div class ='cards_mobile '>
+                                    <div>
+                                        <p
+                                            style="background-color: rgba(227, 232, 237, 1); border-radius: 10px; margin: 7px; padding:8px">
+                                            HTML</p>
+                                    </div>
+                                    <div>
+                                        <p
+                                            style="background-color: rgba(227, 232, 237, 1); border-radius: 10px; margin: 7px; padding:8px">
+                                            Tailwind</p>
+                                    </div>
+                                    <div>
+                                        <p
+                                            style="background-color: rgba(227, 232, 237, 1); border-radius: 10px; margin: 7px; padding:8px">
+                                            Typescript</p>
+                                    </div>
+                                    <div>
+                                        <p
+                                            style="background-color: rgba(227, 232, 237, 1); border-radius: 10px; margin: 7px; padding:8px">
+                                            Next.js</p>
+                                    </div>
+                                </div>
+
+                                <div style="display: flex; margin-top: 10px;">
+                                    <div style="padding-right: 15px;">
+                                        <i class="fa fa-github" style="font-size:26px; color: black;"></i>
+                                    </div>
+
+                                    <div>
+                                        <img src="share.svg" alt="">
+                                    </div>
+                                </div>
+
+                            </div>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
+                                to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <p style="letter-spacing: 3px; font-weight: bolder; font-size: xxx-large;">Fintech landing</p>
+                    <div class="card" style="border-radius: 14px;">
+                        <img src="img-2.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <div style="display: flex; justify-content: space-between; flex-wrap: wrap  ;">
+                                <div  class ='cards_mobile  ' >
+                                    <div>
+                                        <p
+                                            style="background-color: rgba(227, 232, 237, 1); border-radius: 10px; margin: 7px; padding:8px">
+                                            HTML</p>
+                                    </div>
+                                    <div>
+                                        <p
+                                            style="background-color: rgba(227, 232, 237, 1); border-radius: 10px; margin: 7px; padding:8px">
+                                            Tailwind</p>
+                                    </div>
+                                    <div>
+                                        <p
+                                            style="background-color: rgba(227, 232, 237, 1); border-radius: 10px; margin: 7px; padding:8px">
+                                            Typescript</p>
+                                    </div>
+                                    <div>
+                                        <p
+                                            style="background-color: rgba(227, 232, 237, 1); border-radius: 10px; margin: 7px; padding:8px">
+                                            Next.js</p>
+                                    </div>
+                                </div>
+
+                                <div style="display: flex; margin-top: 10px;">
+                                    <div style="padding-right: 15px;">
+                                        <i class="fa fa-github" style="font-size:26px; color: black;"></i>
+                                    </div>
+
+                                    <div>
+                                        <img src="share.svg" alt="">
+                                    </div>
+                                </div>
+
+                            </div>
+                            
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
+                                to additional content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <p style="letter-spacing: 3px; font-weight: bolder; font-size: xxx-large;">Digital Agency</p>
+                    <div class="card" style="border-radius: 14px;">
+                        <img src="img-3.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <div style="display: flex; justify-content: space-between;">
+                                <div class ='cards_mobile  '>
+                                    <div>
+                                        <p
+                                            style="background-color: rgba(227, 232, 237, 1); border-radius: 10px; margin: 7px; padding:8px">
+                                            HTML</p>
+                                    </div>
+                                    <div>
+                                        <p
+                                            style="background-color: rgba(227, 232, 237, 1); border-radius: 10px; margin: 7px; padding:8px">
+                                            Tailwind</p>
+                                    </div>
+                                    <div>
+                                        <p
+                                            style="background-color: rgba(227, 232, 237, 1); border-radius: 10px; margin: 7px; padding:8px">
+                                            Typescript</p>
+                                    </div>
+                                    <div>
+                                        <p
+                                            style="background-color: rgba(227, 232, 237, 1); border-radius: 10px; margin: 7px; padding:8px">
+                                            Next.js</p>
+                                    </div>
+                                </div>
+
+                                <div style="display: flex; margin-top: 10px;">
+                                    <div style="padding-right: 15px;">
+                                        <i class="fa fa-github" style="font-size:26px; color: black;"></i>
+                                    </div>
+
+                                    <div>
+                                        <img src="share.svg" alt="">
+                                    </div>
+                                </div>
+
+                            </div>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
+                                to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="ready_to_start" >
+        <div class="ready_to_start_child">
+            <p id="ready_child_p" >
+                Read to start <br> your next project? <br> <ert style="color: blue;"> Get in touch with me !</ert>
+            </p>
+        </div>
+    </div>
+
+<div style="display: flex; justify-content: center; margin-bottom: 40px;">
+    <div class="footer" style="display: flex; width: 80%;">
+
+        <div style="display: flex; justify-content: start ;width: 50%;">
+            <p><b>Darshan</b></p>
+        </div>
+
+        <div style="display: flex; justify-content: end ; width: 50%;">
+            <div style="padding-left: 10px;">
+                <i class="fa fa-linkedin"style="font-size:26px; color: black;"></i>
+            </div>
+
+            <div style="padding-left: 10px;">
+                <i class="fa fa-twitter"style="font-size:26px; color: black;"></i>
+            </div>
+
+            <div style="padding-left: 10px;">
+                <i class="fa fa-instagram"style="font-size:26px; color: black;"></i>
+            </div>
+
+            <div style="padding-left: 10px;">
+                <i class="fa fa-github"style="font-size:26px; color: black;"></i>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+   
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
