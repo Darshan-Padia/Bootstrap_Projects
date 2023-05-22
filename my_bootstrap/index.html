@@ -49,9 +49,81 @@
         content="AxMeahpLO9nDB/vFXFMGOd/JLhKWx/mOjErAi0qFXDzWuMSYoKpfjFtFfQWMCx+Qg39PMxDJHSLlAJF/H8rtmAwAAABveyJvcmlnaW4iOiJodHRwczovL3MucGluaW1nLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjgwNjUyNzk5LCJpc1RoaXJkUGFydHkiOnRydWV9">
 
     <style type="text/css">
-        #card1_img{
+         #card1_img{
+            height: 100%;
+            width: 100%;
+            }
+
+        .custom_nav {
+            /* Specify navbar styles */
+        }
+
+        .navbar-brand {
+            padding-right: 5cm;
+        }
+
+        .navbar-nav {
+            margin-left: auto;
+        }
+
+        .navbar-nav .nav-item {
+            padding-left: 15px;
+        }
+
+        .homepage_content {
+            /* Specify homepage content styles */
+        }
+
+        .homepage_content p {
+            /* Specify paragraph styles */
+        }
+
+        .button {
+            padding-top: 30px;
+        }
+
+        /* Responsive styles */
+        @media (max-width: 1200px) {
+            .navbar-brand {
+                padding-right: 1cm;
+            }
+
+            .navbar-nav .nav-item {
+                padding-left: 5px;
+            }
+
+            .homepage_content p {
+                font-size: 16px;
+            }
+
+            .button {
+                padding-top: 15px;
+            }
 
         }
+        @media ( max-width:1126px) {
+    .card-deck {
+        /* background-color: rgb(0, 68, 255);    */
+        display: -ms-flexbox;
+        display: flex;
+        /* width: 10%; */
+        -ms-flex-flow: row wrap;
+        flex-flow: row wrap;
+        margin-right: 20%;
+        margin-left: 20%;
+        /* margin-bottom: 20%;
+        margin-top: 20%; */
+
+    }
+
+    .card-deck .card {
+        -ms-flex: 1 0 0%;
+        flex: 2 2 29% !important;
+        margin-right: 15px;
+        margin-bottom: 10px;
+        margin-left: 15px
+    }
+}
 
         @media (top  : 200px){
             p.custom_nav {
@@ -61,26 +133,53 @@
         .custom_nav{
             z-index: 8;
         }
-        @media (min-width: 992px) {
-           
-            .homepage_content p {
-                width: fit-content;
-            }
+      
+        @media (max-width: 686px) {
+            .card-deck {
+            /* background-color: rgb(46, 239, 3); */
+            display: -ms-flexbox;
+            display: flex;
+            /* width: 10%; */
+            -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+            margin-right: 20%;
+            margin-left: 20%;
+            /* margin-bottom: 20%;
+            margin-top: 20%; */
 
-            .homepage_content .button {
-                padding-top: 30px;
-            }
-
-            .homepage_content .btn {
-                width: 100px;
-                height: 50px;
-            }
         }
 
+        .card-deck .card {
+            -ms-flex: 1 0 0%;
+            flex: 0 1 100% !important;
+            margin-right: 15px;
+            margin-bottom: 10px;
+            margin-left: 15px
+    }
+        }
         /* Media Query for Medium screens and above */
-        @media (min-width: 768px) and (max-width: 991px) {
-            .homepage_content p {
+        @media (min-width: 768px) and (max-width: 1143px) {
+            .custom_div{
+                background-image: url(https://aipthemes.com/bizzcorpy/img/bg/hero-bg.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center center ;
+                
+                height: 800px;
                 width: 100%;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                z-index: 1;
+                padding-top: 50px;
+            }
+            #card1_img{
+                margin: 10%;
+                height: 100%;
+                width: 100%;
+            }
+            .homepage_content p {
+                /* width: 100%; */
             }
 
             .homepage_content .button {
@@ -90,6 +189,7 @@
 
         /* Media Query for Small screens and above */
         @media (max-width: 767px) {
+
             #card1_img{
             height: 100%;
             width: 100%;
@@ -108,6 +208,7 @@
                 display: none;
             }
         }
+
 
         /* ============ desktop view ============ */
         @media all and (min-width: 992px) {
@@ -144,7 +245,21 @@
                 margin-top: 0;
             }
         }
+        /* @media (min-width: 992px) {
+           
+           .homepage_content p {
+               width: fit-content;
+           }
 
+           .homepage_content .button {
+               padding-top: 30px;
+           }
+
+           .homepage_content .btn {
+               width: 100px;
+               height: 50px;
+           }
+       } */
 
         /* ============ desktop view .end// ============ */
     </style>
@@ -154,10 +269,10 @@
     <div class='banner'>
         <!--  for  z index -->
     </div>
-    <DIV style="padding-top: 50px;" class="custom_div ">
+    <DIV class="custom_div ">
         <nav class="navbar navbar-expand-lg navbar-light position-sticky custom_nav ">
 
-            <a style="padding-right: 5cm;" class="navbar-brand" href="#">
+            <a  class="navbar-brand" href="#">
                 <ctt style="color: white; font-weight: 900;">BIZZCORPY</ctt>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"

@@ -9,37 +9,59 @@
     <!-- Bootstrap CSS -->
     <link href="bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <title>Hello, world!</title>
 </head>
 
 <style>
-    .ready_to_start_child{
-        width: 80%; padding-top: 30px; padding-bottom: 30px ; padding-left: 100px; padding-right: 100px; background-color: rgba(227, 232, 237, 1); border-radius: 13px;
-    }
-    .ready_to_start{
-        display: flex; justify-content: center; margin-top: 100px;margin-bottom: 100px;
-    }
-   #ready_child_p{
-        
-        text-align: center; font-size: xxx-large;font-weight: 600; letter-spacing: 3px;
-    }
-    .cards_mobile{
-        display: flex; justify-content: space-between;
-        }
-    .experience{
-        display: flex; justify-content: center;
+    .ready_to_start_child {
+        width: 80%;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-left: 100px;
+        padding-right: 100px;
+        background-color: rgba(227, 232, 237, 1);
+        border-radius: 13px;
     }
 
-    .exp_main{
-        width: 80%; padding-top: 50px; display: flex;justify-content: center;
+    .ready_to_start {
+        display: flex;
+        justify-content: center;
+        margin-top: 100px;
+        margin-bottom: 100px;
     }
 
-    .icons_svg{
+    #ready_child_p {
+
+        text-align: center;
+        font-size: xxx-large;
+        font-weight: 600;
+        letter-spacing: 3px;
+    }
+
+    .cards_mobile {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .experience {
+        display: flex;
+        justify-content: center;
+    }
+
+    .exp_main {
+        width: 80%;
+        padding-top: 50px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .icons_svg {
         width: 90%;
     }
 
-    .right_to_icon_svg{
+    .right_to_icon_svg {
         padding-top: 130px;
     }
 
@@ -54,25 +76,30 @@
         background-color: rgba(247, 243, 243, 1);
     }
 
+
     @media only screen and (max-width: 1115px) {
 
-       #ready_child_p{
-            text-align: center; font-size: large;font-weight: 600; letter-spacing: 3px;
+        #ready_child_p {
+            text-align: center;
+            font-size: large;
+            font-weight: 600;
+            letter-spacing: 3px;
 
         }
 
-        .cards_mobile{
+        .cards_mobile {
             display: grid;
             grid-template-columns: auto auto;
             row-gap: 4px;
         }
 
-        .exp_main{
+        .exp_main {
             display: flex;
             flex-direction: column;
             justify-content: center;
         }
-        .right_to_icon_svg{
+
+        .right_to_icon_svg {
             padding-top: 30px;
         }
 
@@ -82,12 +109,8 @@
             padding: 20px;
             grid-template-columns: auto auto auto;
             row-gap: 15px;
-            
-            
-            
-            
         }
-        
+
         .last_two {
             /* justify-content: center !important; */
             margin-left: 250px;
@@ -99,63 +122,66 @@
 
 <body>
 
-    <div style="display: flex; justify-content: center; ">
+    <div id="Home" style="display: flex; justify-content: center; ">
 
-        <nav class="navbar navbar-expand-lg navbar-light  " style="display: flex; justify-content: space-between;width: 80%; ">
+        <nav class="navbar navbar-expand-lg navbar-light  "
+            style="display: flex; justify-content: space-between;width: 80%; ">
             <div style="height: 100%;">
-                <a style="display: flex ; align-items: start;" class="navbar-brand" href="#"><p>Darshan</p></a>
+                <a style="display: flex ; align-items: start;" class="navbar-brand" href="#">
+                    <p>Darshan</p>
+                </a>
             </div>
             <div style=" display: flex;justify-content: space-between; flex-direction: column;">
                 <!-- <div style = "display: flex;justify-content: space-between; flex-direction: row;"> -->
-                    <div  class="d" style=" width: 100%; display: flex;justify-content: center;flex-direction: column;">
+                <div class="d" style=" width: 100%; display: flex;justify-content: center;flex-direction: column;">
 
-                        
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                            aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
 
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="display: flex;justify-content: end; width:100%">
-                                <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">About</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Work</a>
-                                </li>
-                                <form class="d-flex">
-                                    <button class="btn btn" type="submit"><i class="fa fa-github"
-                                            style="font-size:26px; color: black;"></i>
-                                    </button>
-                                </form>
-                                <form class="d-flex">
-                                    <button class="btn btn" type="submit"><i class="fa fa-sun-o"
-                                            style="font-size:26px; color: rgb(193, 121, 12);"></i>
-                                    </button>
-                                </form>
-        
-                                <!-- Default dropend button -->
-                                <div class="btn-group dropend">
-                                    <button type="button" class="btn btn-primary dropdown-toggle" style="border-radius: 10px;"
-                                        data-bs-toggle="dropdown" aria-expanded="false">
-                                        Dropright
-                                    </button>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    </ul>
-                                </div>
-                        </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0"
+                            style="display: flex;justify-content: end; width:100%">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#Home">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#About">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#Work">Work</a>
+                            </li>
+                            <form class="d-flex">
+                                <li><a class="dropdown-item" href="https://github.com/Darshan-Padia"><i
+                                            class="fa fa-github" style="font-size:26px; color: black;"></i></a></li>
+                            </form>
+                            <form class="d-flex">
+                                <button class="btn btn" type="submit"><i class="fa fa-sun-o"
+                                        style="font-size:26px; color: rgb(193, 121, 12);"></i>
+                                </button>
+                            </form>
+
+                            <!-- Default dropend button -->
+                            <div class="btn-group dropdown">
+                                <button type="button" class="btn btn-primary dropdown-toggle"
+                                    style="border-radius: 10px;" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Dropdown
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </div>
+                    </div>
 
                     <!-- </div> -->
 
                 </div>
-                
+
                 </ul>
             </div>
 
@@ -163,8 +189,8 @@
     </nav>
     </div>
 
-    <div style="display: flex; justify-content: center; ">
-        <div  style="width: 800px; margin-right: 10%; margin-left: 10%;" class="intro">
+    <div id="About" style="display: flex; justify-content: center; ">
+        <div style="width: 800px; margin-right: 10%; margin-left: 10%;" class="intro">
 
             <p
                 style=" padding-top: 40px; padding-bottom: 20px; text-align: center; font-size: xxx-large; font-weight: bold;">
@@ -178,7 +204,7 @@
                 line-height: 31px;
                 /* or 129% */
                 
-                text-align: justify;
+                text-align: left;
                 
                 color: #898989;">
                 I am a UI Engineer at Google, where I design and develop user-centered interfaces for cutting-edge
@@ -203,47 +229,47 @@
                 </div>
 
                 <div style="padding: 10px; margin-left: 20px; background-color: gainsboro; border-radius: 10px;">
-                    <img src="Vector.svg" alt="html_image"> HTML
+                    <img src="Vector-1.svg" alt="html_image"> CSS
                 </div>
 
                 <div style="padding: 10px; margin-left: 20px; background-color: gainsboro; border-radius: 10px;">
-                    <img src="Vector.svg" alt="html_image"> HTML
+                    <img src="Vector-2.svg" alt="html_image"> JavaScript
                 </div>
 
                 <div style="padding: 10px; margin-left: 20px; background-color: gainsboro; border-radius: 10px;">
-                    <img src="Vector.svg" alt="html_image"> HTML
+                    <img src="Vector-3.svg" alt="html_image"> Typescript
                 </div>
 
                 <div style="padding: 10px; margin-left: 20px; background-color: gainsboro; border-radius: 10px;">
-                    <img src="Vector.svg" alt="html_image"> HTML
+                    <img src="Vector-4.svg" alt="html_image"> React
                 </div>
 
                 <div style="padding: 10px; margin-left: 20px; background-color: gainsboro; border-radius: 10px;">
-                    <img src="Vector.svg" alt="html_image"> HTML
+                    <img src="Vector-5.svg" alt="html_image"> Nextjs
                 </div>
 
                 <div class="last_two"
                     style="padding: 10px; margin-left: 20px; background-color: gainsboro; border-radius: 10px;">
-                    <img src="Vector.svg" alt="html_image"> HTML
+                    <img src="Vector-6.svg" alt="html_image"> Nodejs
                 </div>
 
                 <div class="last_two"
                     style="padding: 10px; margin-left: 20px; background-color: gainsboro; border-radius: 10px;">
-                    <img src="Vector.svg" alt="html_image"> HTML
+                    <img src="Vector-7.svg" alt="html_image"> Express
                 </div>
 
             </div>
         </div>
     </div>
 
-    <div class="experience" >
-        <div class="exp_main" >
-            <div class="icons_svg" >
+    <div class="experience">
+        <div class="exp_main">
+            <div class="icons_svg">
                 <p
                     style='padding-top : 50px; padding-bottom: 30px; font-size: xxx-large;text-align: left; font-weight: bolder;'>
                     My experience
                 </p>
-                <div  style="display: flex;flex-direction: column; width :150px ">
+                <div style="display: flex;flex-direction: column; width :150px ">
                     <div style="display: flex;">
                         <div>
                             <img src="google.svg" alt="google_image">
@@ -289,8 +315,8 @@
 
             </div>
 
-            <div class="right_to_icon_svg" >
-                <div style="padding: 30px;">
+            <div class="right_to_icon_svg">
+                <div style="padding-top: 30px;">
                     <p>
                         UI Engineer at <wer style="color: blue;">@Goolge</wer>
                     </p>
@@ -299,17 +325,17 @@
                     </p>
                 </div>
 
-                <div style="padding-bottom: 30px;">
+                <div style="padding-bottom: 27px;">
                     Design and implementation of visually appealing and intuitive user interfaces for innovative
                     technology products.
                 </div>
 
-                <div style="padding-bottom: 30px;">
+                <div style="padding-bottom: 27px;">
                     Continuous improvement of the user experience and maintenance of quality standards.
 
                 </div>
 
-                <div style="padding-bottom: 30px;">
+                <div style="padding-bottom: 27px;">
                     Conducting testing and validation, user research, and collaborating with other teams to ensure
                     quality and effective integration with the final product.
                 </div>
@@ -324,17 +350,26 @@
 
     <!-- z -->
 
-    <div style="display: flex; justify-content: center;">
+    <div id="Work" style="display: flex; justify-content: center;">
         <div style="width: 80%;">
+            <div style="margin-bottom: 3%;">
+                <p style="letter-spacing: 2px; font-weight: 400; font-size: xxx-large;">
+                    <b>
+                        My latest <wcw style="color: blue;">work</wcw>
+                    </b>
+                </p>
+            </div>
             <div class="row row-cols-1 row-cols-md-2 g-4">
-                <div class="col">
-                    <p style="letter-spacing: 3px; font-weight: bolder; font-size: xxx-large;">Gitlab Portfolio</p>
+
+                <div id="first_card" class="col"
+                    style=" position: a;z-index: 1; background-color:rgba(227, 232, 237, 1) ; border-radius: 10px;padding-bottom: 20px;">
+                    <p style="letter-spacing: 3px; font-weight: bolder; font-size: 40px;">Gitlab Portfolio</p>
                     <div class="card" style="border-radius: 14px;">
                         <img src="img.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
                             <div style="display: flex; justify-content: space-between;flex-wrap: wrap">
-                                <div class ='cards_mobile  '>
+                                <div class='cards_mobile  '>
                                     <div>
                                         <p
                                             style="background-color: rgba(227, 232, 237, 1); border-radius: 10px; margin: 7px; padding:8px">
@@ -374,13 +409,13 @@
                     </div>
                 </div>
                 <div class="col">
-                    <p style="letter-spacing: 3px; font-weight: bolder; font-size: xxx-large;">NFT Market</p>
+                    <p style="letter-spacing: 3px; font-weight: bolder; font-size: 40px;">NFT Market</p>
                     <div class="card" style="border-radius: 14px;">
                         <img src="img-1.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
                             <div style="display: flex; justify-content: space-between;flex-wrap: wrap">
-                                <div class ='cards_mobile '>
+                                <div class='cards_mobile '>
                                     <div>
                                         <p
                                             style="background-color: rgba(227, 232, 237, 1); border-radius: 10px; margin: 7px; padding:8px">
@@ -420,13 +455,13 @@
                     </div>
                 </div>
                 <div class="col">
-                    <p style="letter-spacing: 3px; font-weight: bolder; font-size: xxx-large;">Fintech landing</p>
+                    <p style="letter-spacing: 3px; font-weight: bolder; font-size: 40px;">Fintech landing</p>
                     <div class="card" style="border-radius: 14px;">
                         <img src="img-2.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
                             <div style="display: flex; justify-content: space-between; flex-wrap: wrap  ;">
-                                <div  class ='cards_mobile  ' >
+                                <div class='cards_mobile  '>
                                     <div>
                                         <p
                                             style="background-color: rgba(227, 232, 237, 1); border-radius: 10px; margin: 7px; padding:8px">
@@ -460,20 +495,20 @@
                                 </div>
 
                             </div>
-                            
+
                             <p class="card-text">This is a longer card with supporting text below as a natural lead-in
                                 to additional content.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col">
-                    <p style="letter-spacing: 3px; font-weight: bolder; font-size: xxx-large;">Digital Agency</p>
+                    <p style="letter-spacing: 3px; font-weight: bolder; font-size: 40px;">Digital Agency</p>
                     <div class="card" style="border-radius: 14px;">
                         <img src="img-3.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
                             <div style="display: flex; justify-content: space-between;flex-wrap: wrap">
-                                <div class ='cards_mobile  '>
+                                <div class='cards_mobile  '>
                                     <div>
                                         <p
                                             style="background-color: rgba(227, 232, 237, 1); border-radius: 10px; margin: 7px; padding:8px">
@@ -517,44 +552,53 @@
     </div>
 
 
-    <div class="ready_to_start" >
+    <div class="ready_to_start">
         <div class="ready_to_start_child">
-            <p id="ready_child_p" >
-                Read to start <br> your next project? <br> <ert style="color: blue;"> Get in touch with me !</ert>
+            <p id="ready_child_p">
+                Read to start <br> your next project? <br>
+                <ert style="color: blue;"> Get in touch with me !</ert>
             </p>
         </div>
     </div>
 
-<div style="display: flex; justify-content: center; margin-bottom: 40px;">
-    <div class="footer" style="display: flex; width: 80%;">
+    <div style="display: flex; justify-content: center; margin-bottom: 40px;">
+        <div class="footer" style="display: flex; width: 80%;">
 
-        <div style="display: flex; justify-content: start ;width: 50%;">
-            <p><b>Darshan</b></p>
+            <div style="display: flex; justify-content: start ;width: 50%;">
+                <p><b>Darshan</b></p>
+            </div>
+
+            <div style="display: flex; justify-content: end ; width: 50%;">
+                <div style="padding-left: 10px;">
+                    <a class="dropdown-item" href="https://www.linkedin.com/in/darshan-padia-920807222/"><i
+                        class="fa fa-linkedin" style="font-size:26px; color: black;"></i></a></li>
+                    <!-- <i class="fa fa-linkedin" style="font-size:26px; color: black;"></i> -->
+                </div>
+
+                <div style="padding-left: 10px;">
+                    <a class="dropdown-item" href="https://www.linkedin.com/in/darshan-padia-920807222/"><i
+                        class="fa fa-twitter" style="font-size:26px; color: black;"></i></a></li>
+                    <!-- <i class="fa fa-twitter" style="font-size:26px; color: black;"></i> -->
+                </div>
+
+                <div style="padding-left: 10px;">
+                    <a class="dropdown-item" href="https://www.instagram.com/darshan_padia/"><i
+                        class="fa fa-instagram" style="font-size:26px; color: black;"></i></a></li>
+                    <!-- <i class="fa fa-instagram" style="font-size:26px; color: black;"></i> -->
+                </div>
+
+                <div style="padding-left: 10px;">
+                    <a class="dropdown-item" href="https://github.com/Darshan-Padia"><i
+                        class="fa fa-github" style="font-size:26px; color: black;"></i></a></li>
+                    <!-- <i class="fa fa-github" style="font-size:26px; color: black;"></i> -->
+                </div>
+
+            </div>
+
         </div>
-
-        <div style="display: flex; justify-content: end ; width: 50%;">
-            <div style="padding-left: 10px;">
-                <i class="fa fa-linkedin"style="font-size:26px; color: black;"></i>
-            </div>
-
-            <div style="padding-left: 10px;">
-                <i class="fa fa-twitter"style="font-size:26px; color: black;"></i>
-            </div>
-
-            <div style="padding-left: 10px;">
-                <i class="fa fa-instagram"style="font-size:26px; color: black;"></i>
-            </div>
-
-            <div style="padding-left: 10px;">
-                <i class="fa fa-github"style="font-size:26px; color: black;"></i>
-            </div>
-
-        </div>
-
     </div>
-</div>
 
-   
+
 
 
     <!-- Optional JavaScript; choose one of the two! -->
