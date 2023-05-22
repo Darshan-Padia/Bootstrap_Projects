@@ -15,6 +15,10 @@
 </head>
 
 <style>
+    .footer{
+        display: flex; width: 80%;
+       
+    }
     .ready_to_start_child {
         width: 80%;
         padding-top: 30px;
@@ -75,7 +79,14 @@
     body {
         background-color: rgba(247, 243, 243, 1);
     }
-
+    @media only screen and (max-width: 400px) {
+        .footer{
+            margin-left: 50%;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+        }
+    }
 
     @media only screen and (max-width: 1115px) {
 
@@ -121,7 +132,7 @@
 </style>
 
 <body>
-
+    
     <div id="Home" style="display: flex; justify-content: center; ">
 
         <nav class="navbar navbar-expand-lg navbar-light  "
@@ -566,10 +577,10 @@
         </div>
     </div>
 
-    <div style="display: flex; justify-content: center; margin-bottom: 40px;">
-        <div class="footer" style="display: flex; width: 80%;">
+    <div style="display: flex; justify-content: center; margin-bottom: 40px; flex-wrap: wrap;">
+        <div class="footer">
 
-            <div style="display: flex; justify-content: start ;width: 50%;">
+            <div style="display: flex; justify-content: start ;width: 50%; padding-top: 5px;margin-right: 20px;">
                 <p><b>Darshan</b></p>
             </div>
 
