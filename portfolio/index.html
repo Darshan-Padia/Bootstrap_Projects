@@ -15,10 +15,18 @@
 </head>
 
 <style>
-    .footer{
-        display: flex; width: 80%;
-       
+    .title_for_card {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
     }
+
+    .footer {
+        display: flex;
+        width: 80%;
+
+    }
+
     .ready_to_start_child {
         width: 80%;
         padding-top: 30px;
@@ -79,14 +87,22 @@
     body {
         background-color: rgba(247, 243, 243, 1);
     }
+
     @media only screen and (max-width: 400px) {
-        .footer{
+        .footer {
             margin-left: 50%;
             justify-content: center;
             display: flex;
             flex-direction: column;
         }
     }
+
+    @media only screen and (max-width: 950px) {
+        .title_for_card {
+            flex-direction: column;
+        }
+    }
+
 
     @media only screen and (max-width: 1115px) {
 
@@ -132,7 +148,7 @@
 </style>
 
 <body>
-    
+
     <div id="Home" style="display: flex; justify-content: center; ">
 
         <nav class="navbar navbar-expand-lg navbar-light  "
@@ -379,7 +395,14 @@
 
                 <div id="first_card" class="col"
                     style=" position: a;z-index: 1; background-color:rgba(227, 232, 237, 1) ; border-radius: 10px;padding-bottom: 20px;">
-                    <p style="letter-spacing: 3px; font-weight: bolder; font-size: 40px;">Gitlab Portfolio</p>
+                    <div class="title_for_card">
+                        <div style="padding-right: 4%;">
+                            <p style="letter-spacing: 3px; font-weight: bolder; font-size: 40px;">Github</p>
+                        </div>
+                        <div>
+                            <p style="letter-spacing: 3px; font-weight: bolder; font-size: 40px;">Portfolio</p>
+                        </div>
+                    </div>                    
                     <div class="card" style="border-radius: 14px;">
                         <img src="img.png" class="card-img-top" alt="...">
                         <div class="card-body">
@@ -425,7 +448,14 @@
                     </div>
                 </div>
                 <div class="col">
-                    <p style="letter-spacing: 3px; font-weight: bolder; font-size: 40px;">NFT Market</p>
+                    <div class="title_for_card">
+                        <div style="padding-right: 4%;">
+                            <p style="letter-spacing: 3px; font-weight: bolder; font-size: 40px;">NFT</p>
+                        </div>
+                        <div>
+                            <p style="letter-spacing: 3px; font-weight: bolder; font-size: 40px;">Market</p>
+                        </div>
+                    </div>
                     <div class="card" style="border-radius: 14px;">
                         <img src="img-1.png" class="card-img-top" alt="...">
                         <div class="card-body">
@@ -471,7 +501,14 @@
                     </div>
                 </div>
                 <div class="col">
-                    <p style="letter-spacing: 3px; font-weight: bolder; font-size: 40px;">Fintech landing</p>
+                    <div class="title_for_card">
+                        <div style="padding-right: 4%;">
+                            <p style="letter-spacing: 3px; font-weight: bolder; font-size: 40px;">Fintech</p>
+                        </div>
+                        <div>
+                            <p style="letter-spacing: 3px; font-weight: bolder; font-size: 40px;">landing</p>
+                        </div>
+                    </div>
                     <div class="card" style="border-radius: 14px;">
                         <img src="img-2.png" class="card-img-top" alt="...">
                         <div class="card-body">
@@ -518,7 +555,14 @@
                     </div>
                 </div>
                 <div class="col">
-                    <p style="letter-spacing: 3px; font-weight: bolder; font-size: 40px;">Digital Agency</p>
+                    <div class="title_for_card">
+                        <div style="padding-right: 4%;">
+                            <p style="letter-spacing: 3px; font-weight: bolder; font-size: 40px;">Digital</p>
+                        </div>
+                        <div>
+                            <p style="letter-spacing: 3px; font-weight: bolder; font-size: 40px;">Agency</p>
+                        </div>
+                    </div>
                     <div class="card" style="border-radius: 14px;">
                         <img src="img-3.png" class="card-img-top" alt="...">
                         <div class="card-body">
@@ -587,25 +631,25 @@
             <div style="display: flex; justify-content: end ; width: 50%;">
                 <div style="padding-left: 10px;">
                     <a class="dropdown-item" href="https://www.linkedin.com/in/darshan-padia-920807222/"><i
-                        class="fa fa-linkedin" style="font-size:26px; color: black;"></i></a></li>
+                            class="fa fa-linkedin" style="font-size:26px; color: black;"></i></a></li>
                     <!-- <i class="fa fa-linkedin" style="font-size:26px; color: black;"></i> -->
                 </div>
 
                 <div style="padding-left: 10px;">
                     <a class="dropdown-item" href="https://www.linkedin.com/in/darshan-padia-920807222/"><i
-                        class="fa fa-twitter" style="font-size:26px; color: black;"></i></a></li>
+                            class="fa fa-twitter" style="font-size:26px; color: black;"></i></a></li>
                     <!-- <i class="fa fa-twitter" style="font-size:26px; color: black;"></i> -->
                 </div>
 
                 <div style="padding-left: 10px;">
-                    <a class="dropdown-item" href="https://www.instagram.com/darshan_padia/"><i
-                        class="fa fa-instagram" style="font-size:26px; color: black;"></i></a></li>
+                    <a class="dropdown-item" href="https://www.instagram.com/darshan_padia/"><i class="fa fa-instagram"
+                            style="font-size:26px; color: black;"></i></a></li>
                     <!-- <i class="fa fa-instagram" style="font-size:26px; color: black;"></i> -->
                 </div>
 
                 <div style="padding-left: 10px;">
-                    <a class="dropdown-item" href="https://github.com/Darshan-Padia"><i
-                        class="fa fa-github" style="font-size:26px; color: black;"></i></a></li>
+                    <a class="dropdown-item" href="https://github.com/Darshan-Padia"><i class="fa fa-github"
+                            style="font-size:26px; color: black;"></i></a></li>
                     <!-- <i class="fa fa-github" style="font-size:26px; color: black;"></i> -->
                 </div>
 
